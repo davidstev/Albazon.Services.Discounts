@@ -4,6 +4,14 @@ namespace Albazon.Services.Discounts.Api.Models
 {
     public class Discount
     {
+
+        public Discount()
+        {
+            Code = "";
+            Amount = 0;
+            MinAmount = 0;
+        }
+
         [Key]
         public int Id { get; set; }
         [Required]
